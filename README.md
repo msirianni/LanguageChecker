@@ -1,15 +1,5 @@
-# App name
+# LanguageChecker
 
-[brief description of the app]
+Compares the comment being submitted to the requester's prefered language and warns the agent if there is a mismatch.
 
-### The following information is displayed:
-
-* info1
-* info2
-* info3
-
-Please submit bug reports to [Insert Link](). Pull requests are welcome.
-
-### Screenshot(s):
-[put your screenshots down here.]
-
+Pull requests are welcome.
