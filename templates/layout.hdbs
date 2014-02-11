@@ -1,0 +1,24 @@
+<header>
+  <span class="logo"/>
+  <h3>{{setting "name"}}</h3>
+</header>
+<section data-main/>
+<footer>
+  <a href="mailto:{{author.email}}">
+    {{author.name}}
+  </a>
+</footer>
+<div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h3 id="myModalLabel">Language Mismatch</h3>
+  </div>
+  <div class="modal-body">
+    <p>It appears you are submitting a comment that doesn't match the requester's preferred language.  Are you sure you want to submit?</p>
+  </div>
+  <div class="modal-footer">
+    <button id="modal_submit_close" class="modal_submit btn" data-dismiss="modal" aria-hidden="true">Cancel</button>
+    <button id="modal_submit_continue" class="modal_submit btn btn-primary">Submit</button>
+  </div>
+</div>
+

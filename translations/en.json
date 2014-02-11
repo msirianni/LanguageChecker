@@ -1,0 +1,10 @@
+{
+	"app": {
+		"description": "Checks comment against requester's preferred language.",
+		"name": "LanguageChecker"
+	},
+	"submit": {
+		"close": "Your submission has been canceled because you didn't choose an option. Please re-submit.",
+		"timeout": "Your submission has been canceled because you didn't choose an option within 20 seconds. Please re-submit."
+	}
+}

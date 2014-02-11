@@ -1,0 +1,17 @@
+{
+  "name": "LanguageChecker",
+  "author": {
+    "name": "Matt Sirianni",
+    "email": "msirianni@zendesk.com"
+  },
+  "defaultLocale": "en",
+  "private": true,
+  "location": "ticket_sidebar",
+  "version": "1.0",
+  "frameworkVersion": "0.5",
+  "parameters": [{
+    "name": "en-US",
+    "type": "hidden",
+    "default": "en"
+  }]
+}
