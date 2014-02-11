@@ -4,7 +4,6 @@
 		events: {
 			'app.activated': 'getRequesterLanguage',
 			'ticket.save': 'checkLanguage'
-
 		},
 		requests: {
 			detectLanguage: function(commentText) {
@@ -49,10 +48,9 @@
 				var comment = this.comment();
 				this.ajax('detectLanguage', comment.text())
 					.then(function(jsonResponse) {
-							if (this.setting(this.requesterLocale) === undefined){
+							if (this.setting(this.requesterLocale) === undefined) {
 								this.transformedLocale = this.requesterLocale;
-							}
-							else{
+							} else {
 								this.transformedLocale = this.setting(this.requesterLocale);
 							}
 							console.log("Comment language detected: " + jsonResponse.data.detections[0].language);
@@ -63,6 +61,7 @@
 								var self = this;
 								return self.promise(function(done, fail) {
 									self.$('.modal_submit').bind("click", function(clicked) {
+										clicked.preventDefault();
 
 										if (clicked.target.id == "modal_submit_continue") {
 											console.log("Clicked continue.");

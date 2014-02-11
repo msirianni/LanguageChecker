@@ -17,8 +17,8 @@
     <p>It appears you are submitting a comment that doesn't match the requester's preferred language.  Are you sure you want to submit?</p>
   </div>
   <div class="modal-footer">
-    <button id="modal_submit_close" class="modal_submit btn" data-dismiss="modal" aria-hidden="true">Cancel</button>
-    <button id="modal_submit_continue" class="modal_submit btn btn-primary">Submit</button>
+    <a id="modal_submit_close" class="modal_submit btn" data-dismiss="modal" aria-hidden="true">Cancel</a>
+    <a id="modal_submit_continue" class="modal_submit btn btn-primary">Submit</a>
   </div>
 </div>
 
