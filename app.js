@@ -54,10 +54,12 @@
 							} else {
 								this.transformedLocale = this.setting(this.requesterLocale);
 							}
+							var json = this.setting("locales");
+							locales = JSON.parse(json);
 							console.log("Comment language detected: " + jsonResponse.data.detections[0].language);
-							this.store('dLanguage', jsonResponse.data.detections[0].language);
+							this.store('dLanguage', locales[jsonResponse.data.detections[0].language]);
 							console.log("Requester locale transformed: " + this.transformedLocale);
-							this.store('rLanguage', this.transformedLocale);
+							this.store('rLanguage', locales[this.transformedLocale]);
 							if (this.transformedLocale != jsonResponse.data.detections[0].language) {
 								console.log("Doesn't match.");
 								this.$('#myModal').modal();

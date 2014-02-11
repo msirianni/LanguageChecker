@@ -13,5 +13,9 @@
     "name": "en-US",
     "type": "hidden",
     "default": "en"
+  }, {
+    "name": "locales",
+    "type": "hidden",
+    "default": "{\"ar\":\"Arabic\",\"az\":\"Azerbaijani\",\"be\":\"Belarusian\",\"bg\":\"Bulgarian\",\"bh\":\"Bihari\",\"bn\":\"Bengali\",\"ca\":\"Catalan\",\"ceb\":\"Cebuano\",\"chr\":\"Cherokee\",\"cs\":\"Czech\",\"cy\":\"Welsh\",\"da\":\"Danish\",\"de\":\"German\",\"dv\":\"Dhivehi\",\"el\":\"Greek\",\"en\":\"English\",\"es\":\"Spanish\",\"et\":\"Estonian\",\"eu\":\"Basque\",\"fa\":\"Persian\",\"fi\":\"Finnish\",\"fil\":\"Tagalog\",\"fr\":\"French\",\"ga\":\"Irish\",\"gd\":\"Scotsgaelic\",\"gl\":\"Galician\",\"gu\":\"Gujarati\",\"he\":\"Hebrew\",\"hi\":\"Hindi\",\"hmn\":\"Hmong\",\"hr\":\"Croatian\",\"ht\":\"Haitiancreole\",\"hu\":\"Hungarian\",\"hy\":\"Armenian\",\"id\":\"Indonesian\",\"is\":\"Icelandic\",\"it\":\"Italian\",\"iu\":\"Inuktitut\",\"ja\":\"Japanese\",\"jw\":\"Javanese\",\"ka\":\"Georgian\",\"km\":\"Khmer\",\"kn\":\"Kannada\",\"ko\":\"Korean\",\"lg\":\"Ganda\",\"lif\":\"Limbu\",\"lo\":\"Laothian\",\"lt\":\"Lithuanian\",\"lv\":\"Latvian\",\"mk\":\"Macedonian\",\"ml\":\"Malayalam\",\"mr\":\"Marathi\",\"ms\":\"Malay\",\"mt\":\"Maltese\",\"nb\":\"Norwegian\",\"ne\":\"Nepali\",\"nl\":\"Dutch\",\"or\":\"Oriya\",\"pa\":\"Punjabi\",\"pl\":\"Polish\",\"pt\":\"Portuguese\",\"ro\":\"Romanian\",\"ru\":\"Russian\",\"rw\":\"Kinyarwanda\",\"si\":\"Sinhalese\",\"sk\":\"Slovak\",\"sl\":\"Slovenian\",\"sq\":\"Albanian\",\"sr\":\"Serbian\",\"sv\":\"Swedish\",\"sw\":\"Swahili\",\"syr\":\"Syriac\",\"ta\":\"Tamil\",\"te\":\"Telugu\",\"th\":\"Thai\",\"tr\":\"Turkish\",\"uk\":\"Ukrainian\",\"ur\":\"Urdu\",\"vi\":\"Vietnamese\",\"yi\":\"Yiddish\",\"zh\":\"Chinese\",\"zhtw\":\"Chineset\"}"
   }]
 }

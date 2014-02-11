@@ -6,8 +6,8 @@
 	"modal":{
 		"header": "Language Mismatch Detected!",
 		"warning": "It appears you are submitting a comment that doesn't match the requester's preferred language.  Are you sure you want to submit?",
-		"rLanguage": "Requester Preferred Language: ",
-		"dLanguage": "Detected Comment Language: ",
+		"rLanguage": "Requester preferred language: ",
+		"dLanguage": "Detected comment language: ",
 		"submit": "Submit",
 		"cancel": "Cancel"
 		},
