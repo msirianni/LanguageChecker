@@ -3,8 +3,17 @@
 		"description": "Checks comment against requester's preferred language.",
 		"name": "LanguageChecker"
 	},
+	"modal":{
+		"header": "Language Mismatch Detected!",
+		"warning": "It appears you are submitting a comment that doesn't match the requester's preferred language.  Are you sure you want to submit?",
+		"rLanguage": "Requester Preferred Language: ",
+		"dLanguage": "Detected Comment Language: ",
+		"submit": "Submit",
+		"cancel": "Cancel"
+		},
 	"submit": {
 		"close": "Your submission has been canceled because you didn't choose an option. Please re-submit.",
-		"timeout": "Your submission has been canceled because you didn't choose an option within 20 seconds. Please re-submit."
+		"timeout": "Your submission has been canceled because you didn't choose an option within 20 seconds. Please re-submit.",
+		"cancel" : "Your submission has been canceled because you hit cancel."
 	}
 }

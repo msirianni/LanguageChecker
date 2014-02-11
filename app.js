@@ -1,4 +1,5 @@
 (function() {
+	var appParentSpace = this;
 
 	return {
 		events: {
@@ -54,34 +55,38 @@
 								this.transformedLocale = this.setting(this.requesterLocale);
 							}
 							console.log("Comment language detected: " + jsonResponse.data.detections[0].language);
+							this.store('dLanguage', jsonResponse.data.detections[0].language);
 							console.log("Requester locale transformed: " + this.transformedLocale);
+							this.store('rLanguage', this.transformedLocale);
 							if (this.transformedLocale != jsonResponse.data.detections[0].language) {
 								console.log("Doesn't match.");
 								this.$('#myModal').modal();
 								var self = this;
-								return self.promise(function(done, fail) {
-									self.$('.modal_submit').bind("click", function(clicked) {
-										clicked.preventDefault();
 
-										if (clicked.target.id == "modal_submit_continue") {
-											console.log("Clicked continue.");
-											done();
-										} else if (clicked.target.id == "modal_submit_close") {
-											console.log("Clicked cancel.");
-											fail(self.I18n.t('submit.cancel'));
-										}
+								self.$('.modal_submit').bind("click", function(clicked) {
+									clicked.preventDefault();
+									if (clicked.target.id == "modal_submit_continue") {
+										console.log("Clicked continue.");
+										appParentSpace.$('#ht_modal').modal('hide');
+										appParentSpace.$('.modal-backdrop').remove();
+										done();
+									} else if (clicked.target.id == "modal_submit_close") {
+										console.log("Clicked cancel.");
+										fail(self.I18n.t('submit.cancel'));
+									}
 
-									});
-
-									self.$('.modal-header button.close').bind("click", function() {
-										console.log("Clicked close.");
-										fail(self.I18n.t('submit.close'));
-									});
-
-									setTimeout(function() {
-										fail(self.I18n.t('submit.timeout'));
-									}, 20000);
 								});
+
+								self.$('.modal-header button.close').bind("click", function() {
+									console.log("Clicked close.");
+									fail(self.I18n.t('submit.close'));
+								});
+
+								setTimeout(function() {
+									fail(self.I18n.t('submit.timeout'));
+									appParentSpace.$('#myModal').modal('hide');
+									appParentSpace.$('.modal-backdrop').remove();
+								}, 20000);
 
 							} else {
 								console.log("Match.");
